@@ -7,6 +7,8 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --azul-escuro: #002046;
     --branco: #fdfdfd;
+    --cinza: #eeeeee;
+    --preto: #000000;
     --inconsolata: 'Inconsolata', monospace;
     --roboto: 'Roboto', sans-serif;
 }
@@ -87,7 +89,7 @@ https://en.bem.info/methodology/quick-start/*/
     text-decoration: underline;
 } */
 
-/*Sessão About*/
+/*Sobre mim*/
 
 section.sobre-mim {
     background-attachment: fixed;
@@ -117,26 +119,30 @@ section.sobre-mim {
 
 .sobre-mim__paragrafo {
     font-size: 1.25rem;
-    text-align: justify;
     line-height: 2;
     padding: 0 4rem 0 3rem;
+    text-align: justify;
 }
 
 .sobre-mim__paragrafo:last-child {
     padding-bottom: 4.5rem;
 }
 
-/*Sessão Hobbies*/
+/*Projetos*/
 
-section.hobbies {}
+section.projetos {
+    background-color: var(--cinza);
+}
 
-/* Experiência Acadêmica*/
+.projetos__titulo {
+    color: var(--preto);
+    font: var(--roboto);
+    text-transform: uppercase;
+    padding: 3.8rem 0;
+    font-size: 2.5rem;
+    text-align: center;
 
-section.academic {}
-
-/* experiência*/
-
-section.experience {}
+}
 
 /*Contato*/
 
@@ -150,7 +156,7 @@ section.footer {}
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     /* Menu */
 
@@ -167,7 +173,7 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media screen and (min-width: 1024px) {
 
     /*Menu*/
 
