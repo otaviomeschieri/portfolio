@@ -1,0 +1,190 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --azul-escuro: #002046;
+    --branco: #fdfdfd;
+    --inconsolata: 'Inconsolata', monospace;
+    --roboto: 'Roboto', sans-serif;
+}
+
+body {
+    /* box-sizing: border-box;*/
+
+    /* margin: 0;
+    padding: 0;
+    line-height: 1; */
+
+    display: grid;  
+    font-family: var(--inconsolata);
+    grid-template-areas: 
+        "cabecalho"
+        "sobre-mim"
+        "projetos"
+        "contato"
+        "me-siga"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+
+.menu__list {
+    display: none;
+    /* Para telas maiores */
+    /* align-items: center;
+    background-color: #002046be;
+    box-sizing: border-box;
+    color: var(--branco);
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    height: 50px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: fixed;
+    width: 100%; */
+}
+
+/* Para telas maiores */
+/* .menu__list___item {
+    font-size: 1.1rem;
+    
+    display: inline-block;
+    margin-right: .7rem;
+    margin-left: .7rem;
+    
+}
+
+.menu__list___item a {
+    color: var(--cor-de-link);
+    font-family: var(--inconsolata);
+    text-decoration: none;
+}
+
+.menu__list___item:hover {
+    text-decoration: underline;
+} */
+
+/*Sessão About*/
+
+section.sobre-mim {
+    background-attachment: fixed;
+    background-color: var(--azul-escuro);
+    background-image: url('./assets/fundo3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    height: auto;
+    /* Telas maiores */
+    /* height: 100vh; */
+}
+
+.sobre-mim__container h2, p {
+    color: var(--branco);
+}
+
+.sobre-mim__ola-mundo {
+    font-size: 1.8rem;
+    padding: 4rem 3rem 0;
+}
+
+.sobre-mim__nome {
+    font-size: 2rem;
+    padding: 3.3rem 3rem 6.3rem;
+}
+
+.sobre-mim__paragrafo {
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 2;
+    padding: 0 4rem 0 3rem;
+}
+
+.sobre-mim__paragrafo:last-child {
+    padding-bottom: 4.5rem;
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies {}
+
+/* Experiência Acadêmica*/
+
+section.academic {}
+
+/* experiência*/
+
+section.experience {}
+
+/*Contato*/
+
+section.formcontato {}
+
+/*footeer*/
+
+section.footer {}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+    /* Menu */
+
+    /*title*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Experiências acadêmicas*/
+
+    /*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+    /*Menu*/
+
+    /*Titulo*/
+
+    /*Sessão sobre*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formação Acadêmica*/
+
+    /*Experiência Profissional*/
+
+    /*Contato*/
+
+    /*Footer*/
+
+}
