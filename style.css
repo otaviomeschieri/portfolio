@@ -20,9 +20,9 @@ body {
     padding: 0;
     line-height: 1; */
 
-    display: grid;  
+    display: grid;
     font-family: var(--inconsolata);
-    grid-template-areas: 
+    grid-template-areas:
         "cabecalho"
         "sobre-mim"
         "projetos"
@@ -33,20 +33,19 @@ body {
     grid-template-rows: auto;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
     list-style: none;
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
 de utiliza-la. 
-
 Mas o que é o BEM?
-
 BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
 web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
 Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
 de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
 Link da documentação oficial!
 https://en.bem.info/methodology/quick-start/*/
 
@@ -78,13 +77,11 @@ https://en.bem.info/methodology/quick-start/*/
     margin-left: .7rem;
     
 }
-
 .menu__list___item a {
     color: var(--cor-de-link);
     font-family: var(--inconsolata);
     text-decoration: none;
 }
-
 .menu__list___item:hover {
     text-decoration: underline;
 } */
@@ -103,24 +100,32 @@ section.sobre-mim {
     /* height: 100vh; */
 }
 
-.sobre-mim__container h2, p {
+.sobre-mim__container h2,
+p {
     color: var(--branco);
 }
 
 .sobre-mim__ola-mundo {
-    font-size: 1.8rem;
-    padding: 4rem 3rem 0;
+    font-size: 1.7rem;
+    padding: 4rem 3rem 4.8rem;
 }
 
 .sobre-mim__nome {
     font-size: 2rem;
-    padding: 3.3rem 3rem 6.3rem;
+    padding: 0 3rem;
+    text-transform: uppercase;
+    border-right: 4px solid;
+    width: 17.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(17), blinking 0.5s infinite step-end alternate;
 }
 
 .sobre-mim__paragrafo {
     font-size: 1.25rem;
     line-height: 2;
-    padding: 0 4rem 0 3rem;
+    /* margin-right: 5rem; */
+    padding: 6.3rem 4rem 0 3rem;
     text-align: justify;
 }
 
@@ -134,14 +139,67 @@ section.projetos {
     background-color: var(--cinza);
 }
 
+.projetos {
+    padding: 0 1rem;
+}
+
 .projetos__titulo {
     color: var(--preto);
     font: var(--roboto);
-    text-transform: uppercase;
+    font-size: 2.8rem;
+    letter-spacing: 0.1rem;
     padding: 3.8rem 0;
-    font-size: 2.5rem;
     text-align: center;
+    text-transform: uppercase;
+}
 
+.projetos__container {
+    margin: 0 auto;
+    /* padding: 1.3rem; */
+}
+
+.projetos__img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.projetos__nome {
+    color: var(--preto);
+    font: var(--roboto);
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.projetos__logos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 320px;
+    margin: auto;
+}
+
+.projetos__logos--html,
+.projetos__logos--css,
+.projetos__logos--javascript {
+    width: 2rem;
+}
+
+.projetos__botoes {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem auto;
+}
+
+.projetos__repositorio {
+    background: orange;
+    text-transform: uppercase;
+}
+
+.projetos__demo {
+    background: pink;
+    text-transform: uppercase;
 }
 
 /*Contato*/
@@ -151,6 +209,18 @@ section.formcontato {}
 /*footeer*/
 
 section.footer {}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
