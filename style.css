@@ -5,9 +5,12 @@ coloque nas sessões indicadas*/
 :root {
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --azul-claro: #318FFF;
     --azul-escuro: #002046;
     --branco: #fdfdfd;
-    --cinza: #eeeeee;
+    --cinza-claro: #eeeeee;
+    --cinza-escuro: #8F8F8F;
+    --fundo-projetos: #D7E4F3;
     --preto: #000000;
     --inconsolata: 'Inconsolata', monospace;
     --roboto: 'Roboto', sans-serif;
@@ -112,17 +115,19 @@ p {
 
 .sobre-mim__nome {
     font-size: 2rem;
+    font-weight: 700;
     padding: 0 3rem;
     text-transform: uppercase;
     border-right: 4px solid;
-    width: 17.5ch;
+    width: 19ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(17), blinking 0.5s infinite step-end alternate;
+    animation: typing 2s steps(19), blinking 0.5s infinite step-end alternate;
 }
 
 .sobre-mim__paragrafo {
     font-size: 1.25rem;
+    font-weight: 700;
     line-height: 2;
     /* margin-right: 5rem; */
     padding: 6.3rem 4rem 0 3rem;
@@ -131,37 +136,40 @@ p {
 
 .sobre-mim__paragrafo:last-child {
     padding-bottom: 4.5rem;
+    padding-top: 3rem;
 }
 
 /*Projetos*/
 
 section.projetos {
-    background-color: var(--cinza);
+    background-color: var(--cinza-claro);
+    margin: 0 auto;
 }
 
-.projetos {
+/* .projetos {
     padding: 0 1rem;
+} */
+
+.projetos__forca {
+    background: var(--fundo-projetos);
+    padding: 5rem 1rem 0;
 }
 
 .projetos__titulo {
     color: var(--preto);
     font: var(--roboto);
-    font-size: 2.8rem;
+    font-size: 3rem;
+    font-weight: 900;
     letter-spacing: 0.1rem;
-    padding: 3.8rem 0;
+    padding: 6.25rem 0 7rem;
     text-align: center;
     text-transform: uppercase;
-}
-
-.projetos__container {
-    margin: 0 auto;
-    /* padding: 1.3rem; */
 }
 
 .projetos__img {
     display: block;
     margin: auto;
-    width: 90%;
+    width: 85%;
 }
 
 .projetos__nome {
@@ -176,30 +184,80 @@ section.projetos {
 .projetos__logos {
     display: flex;
     justify-content: space-evenly;
-    width: 320px;
     margin: auto;
+    width: 320px;
 }
 
 .projetos__logos--html,
 .projetos__logos--css,
 .projetos__logos--javascript {
-    width: 2rem;
+    width: 2.5rem;
 }
 
 .projetos__botoes {
+    border-bottom: 1px solid var(--preto);
     display: flex;
     justify-content: space-around;
-    margin: 4rem auto;
+    margin: 4rem auto 0;
+    padding-bottom: 4.2rem;
+    width: 25.7rem;
+}
+
+.projetos__repositorio, .projetos__demo {
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+    font: var(--roboto);
+    font-size: 1.15rem;
+    height: 2.75rem;
+    position: relative;
+    text-transform: uppercase;
+    width: 9.5rem;
 }
 
 .projetos__repositorio {
-    background: orange;
-    text-transform: uppercase;
+    background: var(--cinza-escuro);
 }
 
 .projetos__demo {
-    background: pink;
-    text-transform: uppercase;
+    background: var(--azul-claro);
+}
+
+.projetos__repositorio:after,
+.projetos__repositorio:before,
+.projetos__demo:after,
+.projetos__demo:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.projetos__repositorio:before,
+.projetos__demo:before {
+    border-left: 1px solid var(--preto);
+    border-right: 1px solid var(--preto);
+    transform: scaleY(0);
+}
+
+.projetos__repositorio:after,
+.projetos__demo:after {
+    border-top: 1px solid var(--preto);
+    border-bottom: 1px solid var(--preto);
+    transform: scaleX(0);
+}
+
+.projetos__repositorio:hover:before,
+.projetos__demo:hover:before {
+    transform: scaleY(1);
+}
+
+.projetos__repositorio:hover:after,
+.projetos__demo:hover:after {
+    transform: scaleX(1);
 }
 
 /*Contato*/
