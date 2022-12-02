@@ -1,0 +1,59 @@
+section.sobre-mim {
+    background-attachment: fixed;
+    background-color: var(--azul-escuro);
+    background-image: url('./assets/img/fundo3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    height: auto;
+    /* Telas maiores */
+    /* height: 100vh; */
+}
+
+.sobre-mim__container h2,
+p {
+    color: var(--branco);
+}
+
+.sobre-mim__ola-mundo {
+    font-size: 1.7rem;
+    padding: 4rem 3rem 4.8rem;
+}
+
+.sobre-mim__nome {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 3rem;
+    text-transform: uppercase;
+    border-right: 4px solid;
+    width: 19ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(19), blinking 0.5s infinite step-end alternate;
+}
+
+.sobre-mim__paragrafo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2;
+    /* margin-right: 5rem; */
+    padding: 6.3rem 4rem 0 3rem;
+    text-align: justify;
+}
+
+.sobre-mim__paragrafo:last-child {
+    padding-bottom: 4.5rem;
+    padding-top: 3rem;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
