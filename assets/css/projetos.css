@@ -19,7 +19,12 @@ section.projetos {
 }
 
 .projetos__div {
-    padding: 5rem 1rem 0;
+    padding-top: 5rem;
+}
+
+.projetos__container {
+    border-bottom: 1px solid var(--preto);
+    margin: 0 1rem;
 }
 
 .projetos__div:nth-child(odd) {
@@ -29,6 +34,7 @@ section.projetos {
 .projetos__img {
     display: block;
     margin: auto;
+    padding: 0 1rem;
     width: 85%;
 }
 
@@ -55,12 +61,12 @@ section.projetos {
 }
 
 .projetos__botoes {
-    border-bottom: 1px solid var(--preto);
+    /* border-bottom: 1px solid var(--preto); */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 4rem auto 0;
-    padding-bottom: 4.2rem;
-    width: 25.7rem;
+    padding: 0 1rem 4.2rem;
+    width: 21.2rem;
 }
 
 .projetos__repositorio, .projetos__demo {

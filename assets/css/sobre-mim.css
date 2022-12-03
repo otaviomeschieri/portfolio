@@ -1,7 +1,7 @@
 section.sobre-mim {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-color: var(--azul-escuro);
-    background-image: url('./assets/img/fundo3.png');
+    background-image: url(../img/fundo5.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
@@ -10,26 +10,25 @@ section.sobre-mim {
     /* height: 100vh; */
 }
 
-.sobre-mim__container h2,
-p {
+.sobre-mim__container h2, p {
     color: var(--branco);
 }
 
 .sobre-mim__ola-mundo {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 4rem 3rem 4.8rem;
 }
 
 .sobre-mim__nome {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
-    padding: 0 3rem;
+    padding-left: 3rem;
     text-transform: uppercase;
     border-right: 4px solid;
-    width: 19ch;
+    width: 22ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(19), blinking 0.5s infinite step-end alternate;
+    animation: typing 2s steps(22), blinking 0.5s infinite step-end alternate;
 }
 
 .sobre-mim__paragrafo {
@@ -37,7 +36,7 @@ p {
     font-weight: 700;
     line-height: 2;
     /* margin-right: 5rem; */
-    padding: 6.3rem 4rem 0 3rem;
+    padding: 6.3rem 2.5rem 0 3rem;
     text-align: justify;
 }
 
