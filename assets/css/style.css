@@ -7,9 +7,11 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --azul-claro: #318FFF;
     --azul-escuro: #002046;
-    --branco: #fdfdfd;
-    --cinza-claro: #eeeeee;
+    --branco: #FDFDFD;
+    --cinza-claro: #EEEEEE;
+    --cinza-claro-formulario: #E3E3E3;
     --cinza-escuro: #8F8F8F;
+    --cinza-escuro-formulario: #C0C0C0;
     --fundo-projetos: #D7E4F3;
     --preto: #000000;
     --inconsolata: 'Inconsolata', monospace;

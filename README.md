@@ -1,3 +1,3 @@
 # Portfólio
 
-Portfólio mostrando meus projetos realizados, com um formulário de contato.
+Portfólio mostrando meus projetos realizados, com um formulário para entrar em contato.

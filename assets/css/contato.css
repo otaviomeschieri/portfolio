@@ -1,0 +1,34 @@
+section.contato {
+    background-color: var(--branco);
+    margin: 0 auto;
+}
+
+.contato__container {
+    padding: 4.5rem 2.35rem;
+}
+
+.contato__titulo {
+    color: var(--preto);
+    font: var(--roboto);
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.contato__texto {
+    color: var(--preto);
+    font: var(--roboto);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    padding-top: 1.1rem;
+}
+
+.contato__formulario {
+    
+}
+
+.contato__input, .contato__textarea {
+    width: 100%;
+    background: var(--cinza-claro-formulario);
+    border: 1px solid var(--preto);
+}
