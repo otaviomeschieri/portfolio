@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700&family=Roboto:wght@700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> -->
@@ -56,7 +56,7 @@
         <!-- Decodificador -->
         <div class="projetos__div">
             <div class="projetos__container">
-                <img class="projetos__img" src="../assets/img/decodificador.png" alt="Decodificador de texto">
+                <img class="projetos__img" src="./assets/img/decodificador.png" alt="Decodificador de texto">
                 <div class="projetos__info">
                     <h2 class="projetos__nome">Decodificador de texto</h2>
                     <div class="projetos__logos">
@@ -83,7 +83,7 @@
         <!-- Forca -->
         <div class="projetos__div">
             <div class="projetos__container">
-                <img class="projetos__img" src="../assets/img/forca.png" alt="Jogo da forca">
+                <img class="projetos__img" src="./assets/img/forca.png" alt="Jogo da forca">
                 <div class="projetos__info">
                     <h2 class="projetos__nome">Jogo da Forca</h2>
                     <div class="projetos__logos">
@@ -110,7 +110,7 @@
         <!-- Novos projetos -->
         <div class="projetos__div">
             <div class="projetos__container">
-                <img class="projetos__img" src="../assets/img/carregando.png" alt="Carregando">
+                <img class="projetos__img" src="./assets/img/carregando.png" alt="Carregando">
                 <div class="projetos__info">
                     <h2 class="projetos__nome">Novos projetos em breve...</h2>
                 </div>
@@ -122,14 +122,26 @@
             <div id="contato__container" class="contato__container">
                 <h2 class="contato__titulo">Vamos conversar!</h2>
                 <h3 class="contato__texto">Preencha o formulário e entre em contato.</h3>
-                <form class="contato__formulario">
+                <form class="contato__formulario" action="https://formsubmit.co/otaviomeschieri@gmail.com" method="POST" data-form>
                     <fieldset>
-                        <input class="contato__input" type="text" id="nome" placeholder="Nome" required>
-                        <input class="contato__input" type="email" id="email" placeholder="Email" required>
-                        <input class="contato__input" type="text" id="assunto" placeholder="Assunto" required>
-                        <textarea class="contato__textarea" rows="5" cols="40" id="mensagem" name="mensagem"
-                            placeholder="Sua mensagem" required></textarea>
-                        <button class="contato__botao">Enviar mensagem</button>
+                        <div class="contato__div">
+                            <input type="text" name="nome" class="contato__input" id="nome" placeholder="Nome" required>
+                            <label class="contato__input-label" for="nome">Nome</label>
+                        </div>
+                        <div class="contato__div">
+                            <input type="email" name="email" class="contato__input" id="email" placeholder="E-mail" required>
+                            <label class="contato__input-label" for="email">E-mail</label>
+                        </div>
+                        <div class="contato__div">
+                            <input type="text" name="assunto" class="contato__input" id="assunto" placeholder="Assunto" required>
+                            <label class="contato__input-label" for="assunto">Assunto</label>
+                        </div>
+                        <div class="contato__div">
+                            <textarea name="mensagem" rows="5" cols="40" class="contato__textarea" id="mensagem" placeholder="Mensagem" required></textarea>
+                            <label class="contato__textarea-label" for="mensagem">Mensagem</label>
+                        </div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit" class="contato__botao" data-button>Enviar mensagem</button>
                     </fieldset>
                 </form>
             </div>
@@ -144,7 +156,8 @@
         </section>
     </section>
     <!-- Script Linkado do seu documento de JavaScript -->
-    <script src="portfolio.js"></script>
+    <script src="./assets/js/portfolio.js"></script>
+    <script src="./assets/js/formulario.js"></script>
 </body>
 
 </html>

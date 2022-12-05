@@ -9,26 +9,126 @@ section.contato {
 
 .contato__titulo {
     color: var(--preto);
-    font: var(--roboto);
-    font-size: 2.2rem;
+    font-family: var(--roboto);
+    font-size: 2rem;
     font-weight: 900;
 }
 
 .contato__texto {
     color: var(--preto);
-    font: var(--roboto);
-    font-size: 1rem;
-    font-weight: 300;
+    font-family: var(--roboto);
+    font-size: 1.05rem;
+    font-weight: 400;
     margin-bottom: 4rem;
-    padding-top: 1.1rem;
+    padding-top: 1.5rem;
 }
 
-.contato__formulario {
-    
+.contato__div {
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
 }
 
-.contato__input, .contato__textarea {
-    width: 100%;
+.contato__input,
+.contato__textarea {
     background: var(--cinza-claro-formulario);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: var(--preto);
+    font-family: var(--roboto);
+    margin: 0 auto 1.5rem;
+    outline: none;
+    transition: .5s;
+    width: 100%;
+}
+
+.contato__input {
+    height: 3.25rem;
+    padding: 1.375rem 0.5rem 0.5rem;
+    /* height: 2.85rem;
+    padding: 0.4rem 0.8rem 0.2rem; */
+}
+
+.contato__textarea {
+    height: 7rem;
+    padding: 1rem 0.8rem 0.5rem;
+    resize: none;
+}
+
+.contato__input::placeholder,
+.contato__textarea::placeholder {
+    visibility: hidden;
+}
+
+.contato__input:hover,
+.contato__input:focus,
+.contato__textarea:hover,
+.contato__textarea:focus {
+    background: var(--cinza-escuro-formulario);
     border: 1px solid var(--preto);
+    outline: none;
+}
+
+.contato__input-label,
+.contato__textarea-label {
+    color: var(--cinza-escuro);
+    font-family: var(--roboto);
+    font-size: 0.94rem;
+    font-weight: 400;
+    left: 0.8rem;
+    position: absolute;
+    top: 1.2rem;
+    transition: all .25s;
+}
+
+.contato__input:not(:placeholder-shown)+.contato__input-label,
+.contato__input:focus+.contato__input-label,
+.contato__textarea:not(:placeholder-shown)+.contato__textarea-label,
+.contato__textarea:focus+.contato__textarea-label {
+    color: var(--cinza-escuro);
+    font-size: 0.85rem;
+    top: 0.35rem;
+    transition: all .25s;
+}
+
+.contato__botao {
+    background: var(--azul-escuro);
+    border: none;
+    border-radius: 50px;
+    color: var(--branco);
+    cursor: pointer;
+    font-family: var(--roboto);
+    font-size: 1.13rem;
+    font-weight: 700;
+    height: 2.8rem;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.contato__botao:hover,
+.contato__botao:focus {
+    background: var(--azul-claro);
+    outline: none;
+}
+
+.contato__botao:disabled {
+    background: var(--cinza-escuro);
+    cursor: not-allowed;
+}
+
+.success,
+.error {
+    text-align: center;
+}
+
+.success {
+    color: greenyellow;
+}
+
+.error {
+    color: tomato;
 }

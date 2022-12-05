@@ -49,6 +49,7 @@ a {
 
 input {
 	border: none;
+	box-sizing: border-box;
 	color: inherit;
 	font-size: inherit;
 	font-weight: inherit;
@@ -57,6 +58,7 @@ input {
 
 textarea {
 	border: none;
+	box-sizing: border-box;
 	color: inherit;
 	font-size: inherit;
 	font-weight: inherit;
