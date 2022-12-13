@@ -67,7 +67,8 @@ section.projetos {
     width: 21.2rem;
 }
 
-.projetos__repositorio, .projetos__demo {
+.projetos__repositorio,
+.projetos__demo {
     border: none;
     color: var(--branco);
     cursor: pointer;
@@ -123,4 +124,20 @@ section.projetos {
 .projetos__repositorio:hover:after,
 .projetos__demo:hover:after {
     transform: scaleX(1);
+}
+
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, 70px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }

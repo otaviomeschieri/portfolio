@@ -1,0 +1,14 @@
+.rodape {
+    background: var(--preto);
+    font-family: var(--roboto);
+    letter-spacing: 0.21rem;
+    text-align: center;
+    padding: 2rem 0 0.5rem;
+}
+
+.rodape__div p {
+    font-size: 0.85rem;
+    color: var(--branco);
+    font-weight: 400;
+    margin-bottom: 1.7rem;
+}

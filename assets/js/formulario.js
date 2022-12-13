@@ -62,4 +62,3 @@ const formSubmit = new FormSubmit({
     success: "<h1 class='success'>Mensagem enviada!</h1>",
     error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>"
 });
-formSubmit.init();

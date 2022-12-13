@@ -3,15 +3,17 @@ section.contato {
     margin: 0 auto;
 }
 
-.contato__container {
-    padding: 4.5rem 2.35rem;
+.contato__container, .contato__redes-sociais {
+    padding: 4.5rem 0;
 }
 
-.contato__titulo {
+.contato__titulo, 
+.contato__redes-sociais___titulo {
     color: var(--preto);
     font-family: var(--roboto);
     font-size: 2rem;
     font-weight: 900;
+    margin-left: 2.35rem;
 }
 
 .contato__texto {
@@ -20,7 +22,12 @@ section.contato {
     font-size: 1.05rem;
     font-weight: 400;
     margin-bottom: 4rem;
+    margin-left: 2.35rem;
     padding-top: 1.5rem;
+}
+
+.contato__formulario {
+    margin: 0 2.35rem;
 }
 
 .contato__div {
@@ -112,6 +119,7 @@ section.contato {
 .contato__botao:hover,
 .contato__botao:focus {
     background: var(--azul-claro);
+    box-shadow: 4px 4px 4px var(--cinza-escuro-formulario);
     outline: none;
 }
 
@@ -131,4 +139,68 @@ section.contato {
 
 .error {
     color: tomato;
+}
+
+.input span.error {
+    display: flex;
+    /* padding: 0;
+    background-color: rgba(255, 0, 0, 0.2); */
+}
+
+.input span.error.active, .error-message {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+.contato__redes-sociais {
+    background-image: url(../img/fundo-branco.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    height: auto;
+    padding-bottom: 2.5px;
+}
+
+.contato__redes-sociais___div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.contato__redes-sociais___botao {
+    background-color: var(--azul-escuro);
+    border: none;
+    border-radius: 10px;
+    color: var(--branco);
+    height: 3.7rem;
+    text-decoration: none;
+    font-family: var(--roboto);
+    transition: 0.3s;
+    width: 16.13rem;
+}
+
+.contato__redes-sociais___botao:hover,
+.contato__redes-sociais___botao:focus {
+    background: var(--azul-claro);
+    box-shadow: 4px 4px 4px var(--cinza-escuro-formulario);
+    outline: none;
+}
+
+.contato__redes-sociais___github,
+.contato__redes-sociais___linkedin {
+    display: block;
+    margin: auto;
+}
+
+.contato__redes-sociais___github {
+    padding-top: 0.1rem;
+    width: 8.7rem;
+}
+
+.contato__redes-sociais___linkedin {
+    padding-top: 0.6rem;
+    width: 9.5rem;
 }
