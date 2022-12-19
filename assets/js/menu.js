@@ -1,6 +1,6 @@
-const nav = document.querySelector(".nav");
-const btnMenu = document.querySelector(".btn-menu");
-const menu = document.querySelector(".menu");
+const nav = document.querySelector(".menu");
+const btnMenu = document.querySelector(".menu__botao");
+const menu = document.querySelector(".menu__list");
 
 function handleButtonClick(event) {
     if (event.type === "touchstart") event.preventDefault();
@@ -42,3 +42,8 @@ function handleClickOutside(targetElement, callback) {
 
 btnMenu.addEventListener("click", handleButtonClick);
 btnMenu.addEventListener("touchstart", handleButtonClick);
+
+function locationreload() {
+    location.reload();
+
+}

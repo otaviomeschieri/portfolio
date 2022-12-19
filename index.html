@@ -28,13 +28,17 @@
 <body>
     <!-- Sessão de Menu  -->
     <header>
-        <nav class="nav">
-            <button class="btn-menu">Menu<span class="hamburger"></span></button>
-            <ul class="menu__list">
+        <!-- <a href="/" class="logo">...</a> -->
+        <button type="button" class="logo" onclick = "locationreload()">
+            <span class="luiz">Luiz </span><span class="otavio">Otavio </span><span class="meschieri">Meschieri</span>
+        </button>
+        <nav class="menu">
+            <button class="menu__botao">Menu<span class="hamburger"></span></button>
+            <ul class="menu__list" id="menu__list">
                 <li class="menu__list___item"><a href="#sobre-mim">Sobre mim</a></li>
                 <li class="menu__list___item"><a href="#projetos">Projetos</a></li>
                 <li class="menu__list___item"><a href="#contato">Contato</a></li>
-                <li class="menu__list___item"><a href="#me-siga">Me siga!</a></li>
+                <li class="menu__list___item"><a href="#contato__redes-sociais">Me siga!</a></li>
             </ul>
         </nav>
     </header>
@@ -60,7 +64,8 @@
             <!-- Decodificador -->
             <div class="projetos__div">
                 <div class="projetos__container">
-                    <img class="projetos__img" data-anime="top" src="./assets/img/decodificador.png" alt="Decodificador de texto">
+                    <img class="projetos__img" data-anime="top" src="./assets/img/decodificador.png"
+                        alt="Decodificador de texto">
                     <div class="projetos__info">
                         <h2 class="projetos__nome">Decodificador de texto</h2>
                         <div class="projetos__logos">
@@ -123,7 +128,7 @@
         </section>
 
         <!-- Contato -->
-        <section class="contato">
+        <section class="contato" id="contato">
             <div id="contato__container" class="contato__container">
                 <h2 class="contato__titulo">Vamos conversar!</h2>
                 <h3 class="contato__texto">Preencha o formulário e entre em contato.</h3>
@@ -158,7 +163,9 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="contato__redes-sociais">
+
+            <!-- Redes sociais -->
+            <div class="contato__redes-sociais" id="contato__redes-sociais">
                 <h2 class="contato__redes-sociais___titulo">Me siga nas redes sociais:</h2>
                 <div class="contato__redes-sociais___div">
                     <a href="https://github.com/otaviomeschieri" target="_blank" class="contato__redes-sociais___botao">
@@ -176,7 +183,7 @@
     </main>
 
     <!-- Rodapé-->
-    <footer class="rodape">
+    <footer class="rodape" id="rodape">
         <div class="rodape__div">
             <p>Desenvolvido por Luiz Otavio Meschieri</p>
             <p>2022</p>

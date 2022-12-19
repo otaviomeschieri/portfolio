@@ -16,7 +16,7 @@ section.sobre-mim {
 
 .sobre-mim__ola-mundo {
     font-size: 1.5rem;
-    padding: 4rem 3rem 4.8rem;
+    padding: 7rem 3rem 4.8rem;
 }
 
 .sobre-mim__nome {
@@ -41,7 +41,7 @@ section.sobre-mim {
 }
 
 .sobre-mim__paragrafo:last-child {
-    padding-bottom: 4.5rem;
+    padding-bottom: 5rem;
     padding-top: 3rem;
 }
 
