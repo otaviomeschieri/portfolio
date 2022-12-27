@@ -204,3 +204,22 @@ section.contato {
     padding-top: 0.6rem;
     width: 9.5rem;
 }
+
+@media screen and (max-width: 768px) {
+    .contato__formulario-div {
+        padding: 0 2.5rem;
+    }
+
+    .contato__formulario {
+        margin: 0 0.35rem;
+    }
+
+    fieldset {
+        width: 100%;
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}

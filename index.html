@@ -29,18 +29,35 @@
     <!-- Sessão de Menu  -->
     <header>
         <!-- <a href="/" class="logo">...</a> -->
-        <button type="button" class="logo" onclick = "locationreload()">
+        <!-- <div class="header__div">
+            <button type="button" class="logo" onclick="locationreload()">
+                <span class="luiz">Luiz </span><span class="otavio">Otavio </span><span
+                    class="meschieri">Meschieri</span>
+            </button>
+            <nav class="menu">
+                <button class="menu__botao">Menu<span class="hamburger"></span></button>
+                <ul class="menu__list" id="menu__list">
+                    <li class="menu__list___item"><a href="#sobre-mim">Sobre mim</a></li>
+                    <li class="menu__list___item"><a href="#projetos">Projetos</a></li>
+                    <li class="menu__list___item"><a href="#contato">Contato</a></li>
+                    <li class="menu__list___item"><a href="#contato__redes-sociais">Me siga!</a></li>
+                </ul>
+            </nav>
+        </div> -->
+
+        <button type="button" class="logo" onclick="locationreload()">
             <span class="luiz">Luiz </span><span class="otavio">Otavio </span><span class="meschieri">Meschieri</span>
         </button>
         <nav class="menu">
             <button class="menu__botao">Menu<span class="hamburger"></span></button>
             <ul class="menu__list" id="menu__list">
-                <li class="menu__list___item"><a href="#sobre-mim">Sobre mim</a></li>
-                <li class="menu__list___item"><a href="#projetos">Projetos</a></li>
-                <li class="menu__list___item"><a href="#contato">Contato</a></li>
-                <li class="menu__list___item"><a href="#contato__redes-sociais">Me siga!</a></li>
+                <li class="menu__list___item"><a class="menu__list___link" href="#sobre-mim">Sobre mim</a></li>
+                <li class="menu__list___item"><a class="menu__list___link" href="#projetos">Projetos</a></li>
+                <li class="menu__list___item"><a class="menu__list___link" href="#contato">Contato</a></li>
+                <li class="menu__list___item"><a class="menu__list___link" href="#contato__redes-sociais">Me siga!</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -132,36 +149,39 @@
             <div id="contato__container" class="contato__container">
                 <h2 class="contato__titulo">Vamos conversar!</h2>
                 <h3 class="contato__texto">Preencha o formulário e entre em contato.</h3>
-                <form class="contato__formulario" action="https://formsubmit.co/otaviomeschieri@gmail.com" method="POST"
-                    data-form>
-                    <fieldset>
-                        <div class="contato__div">
-                            <input type="text" name="nome" class="contato__input" id="nome" placeholder="Nome" required>
-                            <label class="contato__input-label" for="nome">Nome</label>
-                            <span class="error"></span>
-                        </div>
-                        <div class="contato__div">
-                            <input type="email" name="email" class="contato__input" id="email" placeholder="E-mail"
-                                required>
-                            <label class="contato__input-label" for="email">E-mail</label>
-                            <span class="error"></span>
-                        </div>
-                        <div class="contato__div">
-                            <input type="text" name="assunto" class="contato__input" id="assunto" placeholder="Assunto"
-                                required>
-                            <label class="contato__input-label" for="assunto">Assunto</label>
-                            <span class="error"></span>
-                        </div>
-                        <div class="contato__div">
-                            <textarea name="mensagem" rows="5" cols="40" class="contato__textarea" id="mensagem"
-                                placeholder="Mensagem" required></textarea>
-                            <label class="contato__textarea-label" for="mensagem">Mensagem</label>
-                            <span class="error"></span>
-                        </div>
-                        <input type="hidden" name="_captcha" value="false">
-                        <button type="submit" class="contato__botao" data-button>Enviar mensagem</button>
-                    </fieldset>
-                </form>
+                <div class="contato__formulario-div">
+                    <form class="contato__formulario" action="https://formsubmit.co/otaviomeschieri@gmail.com"
+                        method="POST" data-form>
+                        <fieldset>
+                            <div class="contato__div">
+                                <input type="text" name="nome" class="contato__input" id="nome" placeholder="Nome"
+                                    required>
+                                <label class="contato__input-label" for="nome">Nome</label>
+                                <span class="error"></span>
+                            </div>
+                            <div class="contato__div">
+                                <input type="email" name="email" class="contato__input" id="email" placeholder="E-mail"
+                                    required>
+                                <label class="contato__input-label" for="email">E-mail</label>
+                                <span class="error"></span>
+                            </div>
+                            <div class="contato__div">
+                                <input type="text" name="assunto" class="contato__input" id="assunto"
+                                    placeholder="Assunto" required>
+                                <label class="contato__input-label" for="assunto">Assunto</label>
+                                <span class="error"></span>
+                            </div>
+                            <div class="contato__div">
+                                <textarea name="mensagem" rows="5" cols="40" class="contato__textarea" id="mensagem"
+                                    placeholder="Mensagem" required></textarea>
+                                <label class="contato__textarea-label" for="mensagem">Mensagem</label>
+                                <span class="error"></span>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <button type="submit" class="contato__botao" data-button>Enviar mensagem</button>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
 
             <!-- Redes sociais -->
