@@ -26,9 +26,10 @@ section.sobre-mim {
     text-transform: uppercase;
     border-right: 4px solid;
     width: 22ch;
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    white-space: pre;
     overflow: hidden;
-    animation: typing 2s steps(22), blinking 0.5s infinite step-end alternate;
+    animation: typing 2s steps(22), blinking 0.5s infinite step-start alternate;
 }
 
 .sobre-mim__paragrafo {
@@ -36,7 +37,7 @@ section.sobre-mim {
     font-weight: 700;
     line-height: 2;
     /* margin-right: 5rem; */
-    padding: 6.3rem 2.5rem 0 3rem;
+    /* padding: 6.3rem 2.5rem 0 3rem; */
     text-align: justify;
 }
 
@@ -54,5 +55,47 @@ section.sobre-mim {
 @keyframes blinking {
     50% {
         border-color: transparent;
+    }
+}
+
+@media screen and (min-width: 0) {
+    .sobre-mim__nome {
+        font-size: 1.7rem;
+    }
+
+    .sobre-mim__paragrafo {
+        padding: 6.3rem 2.5rem 0 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sobre-mim__ola-mundo {
+        padding-left: 3.5rem;
+    }
+
+    .sobre-mim__nome {
+        font-size: 2.25rem;
+        padding-left: 3.5rem;
+    }
+
+    .sobre-mim__paragrafo {
+        padding: 5.5rem 3.5rem 0 3.5rem;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre-mim__ola-mundo {
+        padding-left: 4rem;
+    }
+
+    .sobre-mim__nome {
+        font-size: 2.25rem;
+        padding-left: 4rem;
+    }
+
+    .sobre-mim__paragrafo {
+        padding: 5.5rem 15rem 0 4rem;
+        margin-right: 4rem;
     }
 }
