@@ -20,6 +20,10 @@
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
 
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> -->
 
     <title>Luiz Otavio Meschieri - Portifólio</title>
@@ -49,15 +53,17 @@
             <span class="luiz">Luiz </span><span class="otavio">Otavio </span><span class="meschieri">Meschieri</span>
         </button>
         <nav class="menu">
-            <button class="menu__botao">Menu<span class="hamburger"></span></button>
+            <div class="menu__div">
+                <button class="menu__botao">Menu<span class="material-symbols-outlined">menu</span></button>
+            </div>
             <ul class="menu__list" id="menu__list">
                 <li class="menu__list___item"><a class="menu__list___link" href="#sobre-mim">Sobre mim</a></li>
                 <li class="menu__list___item"><a class="menu__list___link" href="#projetos">Projetos</a></li>
                 <li class="menu__list___item"><a class="menu__list___link" href="#contato">Contato</a></li>
-                <li class="menu__list___item"><a class="menu__list___link" href="#contato__redes-sociais">Me siga!</a></li>
+                <li class="menu__list___item"><a class="menu__list___link" href="#contato__redes-sociais">Me siga!</a>
+                </li>
             </ul>
         </nav>
-
     </header>
 
     <main>
@@ -65,7 +71,9 @@
         <section class="sobre-mim" id="sobre-mim">
             <div class="sobre-mim__container">
                 <h2 class="sobre-mim__ola-mundo">Olá mundo! Meu nome é</h2>
-                <h2 class="sobre-mim__nome">Luiz Otavio Meschieri.</h2>
+                <div class="sobre-mim__nome-container">
+                    <h2 class="sobre-mim__nome">Luiz Otavio Meschieri.</h2>
+                </div>
                 <p class="sobre-mim__paragrafo">Sou tecnólogo em Meio Ambiente e Recursos Hídricos pela Faculdade de
                     Tecnologia de Jahu e iniciei uma pós-graduação em Geoprocessamento Ambiental, mas decidi me dedicar
                     à
