@@ -20,7 +20,7 @@ class FormSubmit {
     getFormObject() {
         const formObject = {};
         const fields = this.form.querySelectorAll("[name]");
-        fields.forEach(field => {
+        fields.forEach((field) => {
             formObject[field.getAttribute("name")] = field.value;
         });
         return formObject;
@@ -33,6 +33,7 @@ class FormSubmit {
     }
 
     async sendForm(event) {
+        // checkRequired();
         try {
             this.onSubmission(event);
             await fetch(this.url, {
@@ -43,7 +44,7 @@ class FormSubmit {
                 },
                 body: JSON.stringify(this.getFormObject()),
             });
-            this.formButton.innerText = "Enviado"
+            this.displaySuccess();
         } catch (error) {
             this.displayError();
             throw new Error(error);
@@ -54,11 +55,21 @@ class FormSubmit {
         if (this.form) this.formButton.addEventListener("click", this.sendForm);
         return this;
     }
+
+    // checkRequired() {
+    //     const campo = document.querySelector(".contato__input");
+    //     if (campo.length === 0) {
+    //         return false;
+    //     }
+    //     // value.length === 0
+    // }
+
 }
 
 const formSubmit = new FormSubmit({
     form: "[data-form]",
     button: "[data-button]",
-    success: "<h1 class='success'>Mensagem enviada!</h1>",
-    error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>"
+    success: "<h1 class='success'>Mensagem enviada! ;D</h1>",
+    error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
+formSubmit.init();

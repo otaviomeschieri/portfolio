@@ -151,13 +151,9 @@ header {
         font-size: 1rem;
         gap: 0.75rem;
         inline-size: 5rem;
-        margin-right: 2rem;
+        margin-right: 2.3rem;
         overflow-wrap: break-word;
         padding: 0.5rem 1rem;
-    }
-
-    .material-symbols-outlined {
-
     }
 
     .hamburger {

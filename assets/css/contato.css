@@ -3,8 +3,7 @@ section.contato {
     margin: 0 auto;
 }
 
-.contato__container,
-.contato__redes-sociais {
+.contato__container {
     padding: 4.5rem 0;
 }
 
@@ -12,33 +11,27 @@ section.contato {
 .contato__redes-sociais___titulo {
     color: var(--preto);
     font-family: var(--roboto);
-    font-size: 2rem;
-    font-weight: 900;
-    margin-left: 2.35rem;
 }
 
 .contato__texto {
     color: var(--preto);
     font-family: var(--roboto);
-    font-size: 1.05rem;
     font-weight: 400;
-    margin-bottom: 4rem;
-    margin-left: 2.35rem;
-    padding-top: 1.5rem;
 }
 
 .contato__formulario {
-    margin: 0 2.35rem;
+    background-color: var(--azul-claro);
+    border-radius: 15px;
+    margin: 0 auto;
 }
 
 .contato__div {
-    font-weight: 400;
-    position: relative;
-    margin-bottom: 1rem;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    font-weight: 400;
     justify-content: flex-end;
-    box-sizing: border-box;
+    position: relative;
 }
 
 .contato__input,
@@ -48,21 +41,17 @@ section.contato {
     border-radius: 10px;
     color: var(--preto);
     font-family: var(--roboto);
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 0.5rem;
     outline: none;
     transition: .5s;
     width: 100%;
 }
 
 .contato__input {
-    height: 3.25rem;
     padding: 1.375rem 0.5rem 0.5rem;
-    /* height: 2.85rem;
-    padding: 0.4rem 0.8rem 0.2rem; */
 }
 
 .contato__textarea {
-    height: 7rem;
     padding: 1rem 0.8rem 0.5rem;
     resize: none;
 }
@@ -98,7 +87,7 @@ section.contato {
 .contato__textarea:not(:placeholder-shown)+.contato__textarea-label,
 .contato__textarea:focus+.contato__textarea-label {
     color: var(--cinza-escuro);
-    font-size: 0.85rem;
+    font-size: 0.825rem;
     top: 0.35rem;
     transition: all .25s;
 }
@@ -110,17 +99,20 @@ section.contato {
     color: var(--branco);
     cursor: pointer;
     font-family: var(--roboto);
-    font-size: 1.13rem;
     font-weight: 700;
-    height: 2.8rem;
-    transition: 0.3s;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    transition: 1s;
     width: 100%;
 }
 
 .contato__botao:hover,
 .contato__botao:focus {
-    background: var(--azul-claro);
-    box-shadow: 4px 4px 4px var(--cinza-escuro-formulario);
+    background: var(--cinza-escuro-formulario);
+    /* border: 1px solid var(--preto); */
+    /* box-shadow: 4px 4px 4px var(--cinza-escuro-formulario); */
+    color: var(--preto);
     outline: none;
 }
 
@@ -131,28 +123,26 @@ section.contato {
 
 .success,
 .error {
+    color: var(--branco);
+    font-family: var(--roboto);
+    font-weight: 700;
     text-align: center;
+    text-transform: uppercase;
 }
 
-.success {
-    color: greenyellow;
-}
-
-.error {
-    color: tomato;
-}
-
-.input span.error {
+/* .input span.error {
     display: flex;
-    /* padding: 0;
-    background-color: rgba(255, 0, 0, 0.2); */
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
 .input span.error.active,
 .error-message {
     border: 1px solid red;
+    border-radius: 5px;
     padding: 0.4em;
-}
+
+} */
 
 .contato__redes-sociais {
     background-image: url(../img/fundo-branco.png);
@@ -160,7 +150,7 @@ section.contato {
     background-size: contain;
     background-position: right bottom;
     height: auto;
-    padding-bottom: 2.5px;
+    padding-bottom: 0.156rem;
 }
 
 .contato__redes-sociais___div {
@@ -208,44 +198,152 @@ section.contato {
 }
 
 @media screen and (min-width: 0) {
+
+    .contato__titulo,
+    .contato__redes-sociais___titulo {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: 2.35rem;
+    }
+
+    .contato__texto {
+        font-size: 1.05rem;
+        margin-bottom: 4rem;
+        margin-left: 2.35rem;
+        padding-top: 1.5rem;
+    }
+
     .contato__formulario-div {
-        padding: 0 2.5rem;
+        /* padding: 0 2.5rem; */
+        margin: 0 1.35rem;
     }
 
     .contato__formulario {
-        margin: 0 0.35rem;
+        max-width: 25rem;
+        padding: 1.5rem 1.2rem;
     }
 
     fieldset {
+        /* margin-left: auto;
+        margin-right: auto; */
         width: 100%;
+    }
 
+    .contato__div {
+        margin-bottom: 1.5rem;
+    }
+
+    .contato__input {
+        height: 3.25rem;
+    }
+
+    .contato__textarea {
+        height: 7rem;
+    }
+
+    .contato__botao-div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contato__botao {
+        font-size: 1.13rem;
+        height: 2.8rem;
+        max-width: 25rem;
+    }
+
+    .success,
+    .error {
+        font-size: 1.25rem;
+        letter-spacing: 0.1rem;
+        margin: 3rem 0;
+    }
+
+    .contato__redes-sociais {
+        padding: 3rem 0;
     }
 }
 
 @media screen and (min-width: 768px) {
+
     .contato__titulo,
     .contato__redes-sociais___titulo {
-        font-size: 2.25rem;
+        font-size: 2.35rem;
         font-weight: 700;
-        margin-left: 3.5rem;
+        margin-left: 4.15rem;
+        /* background-color: brown; */
+    }
+
+    .contato__titulo {
+        margin-top: 2.5rem;
     }
 
     .contato__texto {
         font-size: 1.15rem;
-        margin-bottom: 4.75rem;
-        margin-left: 3.5rem;
+        margin-bottom: 5.75rem;
+        margin-left: 4.15rem;
         padding-top: 2rem;
+    }
+
+    .contato__formulario-div {
+        margin: 0 2.35rem;
     }
 
     .contato__formulario {
         /* background-color: aqua; */
-        margin: 0 2.3rem;
+        max-width: 43rem;
+        padding: 2.5rem 1.6rem;
     }
-    
+
+    fieldset {
+        /* background-color: deeppink; */
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
     .contato__div {
         /* background-color: rebeccapurple; */
-        margin-bottom: 1.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .contato__input {
+        height: 3.5rem;
+    }
+
+    .contato__textarea {
+        height: 10rem;
+    }
+
+    .contato__botao-div {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .contato__botao {
+        font-size: 1.3rem;
+        height: 3.2rem;
+        max-width: 35rem;
+    }
+
+    .success,
+    .error {
+        font-size: 2rem;
+        letter-spacing: 0.17rem;
+        margin: 3.5rem 0;
+    }
+
+    .contato__redes-sociais {
+        padding: 4.5rem 0;
     }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+    .success,
+    .error {
+        font-size: 2.3rem;
+        letter-spacing: 0.2rem;
+        margin: 4rem 0;
+    }
+}

@@ -158,7 +158,7 @@
                 <h2 class="contato__titulo">Vamos conversar!</h2>
                 <h3 class="contato__texto">Preencha o formulário e entre em contato.</h3>
                 <div class="contato__formulario-div">
-                    <form class="contato__formulario" action="https://formsubmit.co/otaviomeschieri@gmail.com"
+                    <!-- <form class="contato__formulario" action="https://formsubmit.co/otaviomeschieri@gmail.com"
                         method="POST" data-form>
                         <fieldset>
                             <div class="contato__div">
@@ -187,6 +187,35 @@
                             </div>
                             <input type="hidden" name="_captcha" value="false">
                             <button type="submit" class="contato__botao" data-button>Enviar mensagem</button>
+                        </fieldset>
+                    </form> -->
+                    <form class="contato__formulario" action="https://formsubmit.co/otaviomeschieri@gmail.com"
+                        method="POST" data-form>
+                        <fieldset>
+                            <div class="contato__div">
+                                <input type="text" name="nome" id="nome" class="contato__input" placeholder="Nome"
+                                    required />
+                                <label class="contato__input-label" for="nome">Nome</label>
+                            </div>
+                            <div class="contato__div">
+                                <input type="email" name="email" id="email" class="contato__input" placeholder="E-mail"
+                                    required />
+                                <label class="contato__input-label" for="email">E-mail</label>
+                            </div>
+                            <div class="contato__div">
+                                <input type="text" name="assunto" id="assunto" class="contato__input"
+                                    placeholder="Assunto" required>
+                                <label class="contato__input-label" for="assunto">Assunto</label>
+                            </div>
+                            <div class="contato__div">
+                                <textarea name="mensagem" id="mensagem" class="contato__textarea" placeholder="Mensagem"
+                                required></textarea>
+                                <label class="contato__textarea-label" for="mensagem">Mensagem</label>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="contato__botao-div">
+                                <button type="submit" class="contato__botao" data-button>Enviar</button>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
@@ -219,8 +248,8 @@
     </footer>
 
     <!-- Script Linkado do seu documento de JavaScript -->
-    <script src="./assets/js/portfolio.js"></script>
-    <!-- <script src="./assets/js/formulario.js"></script> -->
+    <!-- <script src="./assets/js/portfolio.js"></script> -->
+    <script src="./assets/js/formulario.js"></script>
     <script src="./assets/js/animaScroll.js"></script>
     <script src="./assets/js/menu.js"></script>
 </body>
