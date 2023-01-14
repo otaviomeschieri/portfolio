@@ -3,10 +3,6 @@ section.projetos {
     margin: 0 auto;
 }
 
-/* .projetos {
-    padding: 0 1rem;
-} */
-
 .projetos__titulo {
     color: var(--preto);
     font-family: var(--roboto);
@@ -29,16 +25,12 @@ section.projetos {
 
 .projetos__img {
     display: block;
-    /* margin: auto; */
     padding: 0 1rem;
-    /* width: 85%; */
 }
 
 .projetos__nome {
     color: var(--preto);
     font-family: var(--inconsolata);
-    /* font-size: 1.8rem;
-    padding: 3rem 0; */
     text-align: center;
 }
 
@@ -52,9 +44,6 @@ section.projetos {
 .projetos__botoes {
     display: flex;
     justify-content: space-between;
-    /* margin: 4rem auto 0;
-    padding: 0 1rem 4.2rem;
-    width: 21.2rem; */
 }
 
 .projetos__repositorio,
@@ -63,12 +52,9 @@ section.projetos {
     color: var(--branco);
     cursor: pointer;
     font-family: var(--roboto);
-    /* font-size: 1.1rem; */
-    /* font-weight: 400; */
     height: 2.75rem;
     position: relative;
     text-transform: uppercase;
-    /* width: 9.5rem; */
 }
 
 .projetos__repositorio {
@@ -203,7 +189,6 @@ section.projetos {
 
     .projetos__img {
         margin: auto 0;
-        /* padding: 0 1rem; */
         width: 290px;
     }
 
@@ -251,7 +236,6 @@ section.projetos {
     .projetos__demo {
         font-size: 0.9rem;
         font-weight: 500;
-        /* height: 2.75rem; */
         letter-spacing: 1.2px;
         width: 8.775rem;
     }
@@ -284,7 +268,6 @@ section.projetos {
 
     .projetos__img {
         margin: auto 0;
-        /* padding: 0 1rem; */
         width: 565px;
     }
 
@@ -337,7 +320,6 @@ section.projetos {
     .projetos__demo {
         font-size: 1rem;
         font-weight: 600;
-        /* height: 2.75rem; */
         letter-spacing: 1.2px;
         width: 9.5rem;
     }

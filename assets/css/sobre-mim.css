@@ -1,16 +1,14 @@
 section.sobre-mim {
-    /* background-attachment: fixed; */
     background-color: var(--azul-escuro);
-    background-image: url(../img/fundo5.png);
+    background-image: url(../img/fundo-azul.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
     height: auto;
-    /* Telas maiores */
-    /* height: 100vh; */
 }
 
-.sobre-mim__container h2, p {
+.sobre-mim__container h2,
+p {
     color: var(--branco);
 }
 
@@ -26,23 +24,9 @@ section.sobre-mim {
     text-transform: uppercase;
     border-right: 4px solid;
     width: 0;
-    /* white-space: nowrap; */
     white-space: pre;
     overflow: hidden;
     animation: typing 2s steps(22, end) forwards, blinking 0.5s infinite step-start alternate;
-
-    /* overflow: hidden;
-    border-right: 4px solid var(--branco);
-    white-space: nowrap;
-    font-size: 1.7rem;
-    font-weight: 700;
-    padding-left: 3rem;
-    text-transform: uppercase;
-    margin-left: 3rem;
-    width: 0;
-    animation:
-        typing 1s steps(15, end) forwards,
-        blink .8s infinite; */
 }
 
 .sobre-mim__nome-container {
@@ -53,8 +37,6 @@ section.sobre-mim {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 2;
-    /* margin-right: 5rem; */
-    /* padding: 6.3rem 2.5rem 0 3rem; */
     text-align: justify;
 }
 
@@ -62,26 +44,6 @@ section.sobre-mim {
     padding-bottom: 5rem;
     padding-top: 3rem;
 }
-
-/* @keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 85%
-    }
-}
-
-@keyframes blink {
-    from {
-        border-color: transparent
-    }
-
-    to {
-        border-color: var(--branco);
-    }
-} */
 
 @keyframes typing {
     from {

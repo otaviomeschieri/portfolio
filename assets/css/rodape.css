@@ -1,14 +1,44 @@
 .rodape {
     background: var(--preto);
     font-family: var(--roboto);
-    letter-spacing: 0.21rem;
     text-align: center;
-    padding: 2rem 0 0.5rem;
 }
 
 .rodape__div p {
-    font-size: 0.85rem;
-    color: var(--branco);
+    color: var(--cinza-escuro);
     font-weight: 400;
-    margin-bottom: 1.7rem;
+    letter-spacing: 0.12rem;
+    margin-bottom: 1.6rem;
+}
+
+.rodape__div p:last-child {
+    margin-bottom: 1.9rem;
+}
+
+@media screen and (min-width: 0) {
+    .rodape {
+        padding: 2.35rem 0 0.5rem;
+    }
+
+    .rodape__div p {
+        font-size: 0.85rem;
+    }
+
+    .rodape__div p:last-child {
+        margin-bottom: 1.9rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .rodape {
+        padding: 1.9rem 0 0.75rem;
+    }
+
+    .rodape__div p {
+        font-size: 0.9rem;
+    }
+
+    .rodape__div p:last-child {
+        margin-bottom: 1.25rem;
+    }
 }

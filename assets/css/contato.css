@@ -21,6 +21,7 @@ section.contato {
 
 .contato__formulario {
     background-color: var(--azul-claro);
+    border: 1px solid var(--cinza-escuro);
     border-radius: 15px;
     margin: 0 auto;
 }
@@ -110,8 +111,6 @@ section.contato {
 .contato__botao:hover,
 .contato__botao:focus {
     background: var(--cinza-escuro-formulario);
-    /* border: 1px solid var(--preto); */
-    /* box-shadow: 4px 4px 4px var(--cinza-escuro-formulario); */
     color: var(--preto);
     outline: none;
 }
@@ -130,20 +129,6 @@ section.contato {
     text-transform: uppercase;
 }
 
-/* .input span.error {
-    display: flex;
-    padding: 0;
-    background-color: rgba(255, 0, 0, 0.2);
-}
-
-.input span.error.active,
-.error-message {
-    border: 1px solid red;
-    border-radius: 5px;
-    padding: 0.4em;
-
-} */
-
 .contato__redes-sociais {
     background-image: url(../img/fundo-branco.png);
     background-repeat: no-repeat;
@@ -157,19 +142,14 @@ section.contato {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
     justify-content: center;
-    margin: 5rem 0;
 }
 
 .contato__redes-sociais___botao {
     background-color: var(--azul-escuro);
     border: none;
     border-radius: 10px;
-    color: var(--branco);
     height: 3.7rem;
-    text-decoration: none;
-    font-family: var(--roboto);
     transition: 0.3s;
     width: 16.13rem;
 }
@@ -177,7 +157,6 @@ section.contato {
 .contato__redes-sociais___botao:hover,
 .contato__redes-sociais___botao:focus {
     background: var(--azul-claro);
-    box-shadow: 4px 4px 4px var(--cinza-escuro-formulario);
     outline: none;
 }
 
@@ -199,8 +178,7 @@ section.contato {
 
 @media screen and (min-width: 0) {
 
-    .contato__titulo,
-    .contato__redes-sociais___titulo {
+    .contato__titulo {
         font-size: 2rem;
         font-weight: 700;
         margin-left: 2.35rem;
@@ -214,18 +192,15 @@ section.contato {
     }
 
     .contato__formulario-div {
-        /* padding: 0 2.5rem; */
         margin: 0 1.35rem;
     }
 
     .contato__formulario {
-        max-width: 25rem;
+        max-width: 28rem;
         padding: 1.5rem 1.2rem;
     }
 
     fieldset {
-        /* margin-left: auto;
-        margin-right: auto; */
         width: 100%;
     }
 
@@ -249,7 +224,7 @@ section.contato {
     .contato__botao {
         font-size: 1.13rem;
         height: 2.8rem;
-        max-width: 25rem;
+        max-width: 28rem;
     }
 
     .success,
@@ -262,6 +237,17 @@ section.contato {
     .contato__redes-sociais {
         padding: 3rem 0;
     }
+
+    .contato__redes-sociais___titulo {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-left: 2.35rem;
+    }
+
+    .contato__redes-sociais___div {
+        gap: 2.75rem;
+        margin: 5.5rem 0 4.5rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -271,7 +257,6 @@ section.contato {
         font-size: 2.35rem;
         font-weight: 700;
         margin-left: 4.15rem;
-        /* background-color: brown; */
     }
 
     .contato__titulo {
@@ -290,20 +275,17 @@ section.contato {
     }
 
     .contato__formulario {
-        /* background-color: aqua; */
         max-width: 43rem;
         padding: 2.5rem 1.6rem;
     }
 
     fieldset {
-        /* background-color: deeppink; */
         margin-left: 0;
         margin-right: 0;
         width: 100%;
     }
 
     .contato__div {
-        /* background-color: rebeccapurple; */
         margin-bottom: 2.4rem;
     }
 
@@ -336,6 +318,11 @@ section.contato {
     .contato__redes-sociais {
         padding: 4.5rem 0;
     }
+
+    .contato__redes-sociais___div {
+        gap: 3rem;
+        margin: 6.5rem 0 4rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -345,5 +332,26 @@ section.contato {
         font-size: 2.3rem;
         letter-spacing: 0.2rem;
         margin: 4rem 0;
+    }
+
+    .contato__redes-sociais___div {
+        flex-direction: row;
+        gap: 10.5rem;
+        margin: 11.5rem 0 7.5rem;
+    }
+
+    .contato__redes-sociais___botao {
+        height: 4rem;
+        width: 17.13rem;
+    }
+
+    .contato__redes-sociais___github {
+        padding-top: 0.1rem;
+        width: 9.7rem;
+    }
+
+    .contato__redes-sociais___linkedin {
+        padding-top: 0.6rem;
+        width: 10.5rem;
     }
 }

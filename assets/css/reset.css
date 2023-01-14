@@ -24,9 +24,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	font-family: var(--inconsolata);
 	line-height: 1;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 blockquote, q {

@@ -33,7 +33,6 @@ class FormSubmit {
     }
 
     async sendForm(event) {
-        // checkRequired();
         try {
             this.onSubmission(event);
             await fetch(this.url, {
@@ -55,15 +54,6 @@ class FormSubmit {
         if (this.form) this.formButton.addEventListener("click", this.sendForm);
         return this;
     }
-
-    // checkRequired() {
-    //     const campo = document.querySelector(".contato__input");
-    //     if (campo.length === 0) {
-    //         return false;
-    //     }
-    //     // value.length === 0
-    // }
-
 }
 
 const formSubmit = new FormSubmit({
